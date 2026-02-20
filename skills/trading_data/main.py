@@ -24,12 +24,12 @@ SYMBOL_MAP = {
     "bnb": "BNBUSDT"
 }
 
-# 数据结构：每条记录包含 price, qty, time, rsi, kdj, boll
+# 数据结构：每条记录包含 price, qty, time, rsi, kdj, boll, ema
 def create_record(candle, tech_indicators):
     """
     创建单条记录
     candle: [open_time, open, high, low, close, volume, ...]
-    tech_indicators: {'rsi': x, 'kdj': {...}, 'boll': {...}}
+    tech_indicators: {'rsi': x, 'kdj': {...}, 'boll': {...}, 'ema': {...}}
     """
     return {
         "price": float(candle[4]),      # 收盘价
@@ -37,7 +37,8 @@ def create_record(candle, tech_indicators):
         "time": int(candle[0]),          # K线开始时间
         "rsi": tech_indicators.get('rsi'),
         "kdj": tech_indicators.get('kdj', {}),
-        "boll": tech_indicators.get('boll', {})
+        "boll": tech_indicators.get('boll', {}),
+        "ema": tech_indicators.get('ema', {})
     }
 
 # 获取K线数据

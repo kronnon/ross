@@ -2,6 +2,11 @@
 
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
+## 工作区目录结构
+
+- `strategies/` - 策略代码文件夹
+- `outputs/` - 输出结果文件夹（交易记录、统计报表等）
+
 ## What Goes Here
 
 Things like:

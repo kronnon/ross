@@ -1,10 +1,11 @@
 def calculate_tech_indicators(data):
-    """计算RSI/KDJ/BOLL指标"""
+    """计算RSI/KDJ/BOLL/EMA指标"""
     if not data:
         return {
             'rsi': 50.0,
             'kdj': {'k': 50.0, 'd': 50.0, 'j': 50.0},
-            'boll': {'upper': 0, 'middle': 0, 'lower': 0}
+            'boll': {'upper': 0, 'middle': 0, 'lower': 0},
+            'ema': {'ema9': 0, 'ema21': 0}
         }
     
     # 提取收盘价序列
@@ -62,8 +63,22 @@ def calculate_tech_indicators(data):
         upper = middle * 1.02
         lower = middle * 0.98
     
+    # 计算EMA (9周期和21周期)
+    def calc_ema(prices, period):
+        if len(prices) < period:
+            return prices[-1] if prices else 0
+        multiplier = 2 / (period + 1)
+        ema = sum(prices[:period]) / period
+        for price in prices[period:]:
+            ema = (price - ema) * multiplier + ema
+        return ema
+    
+    ema9 = calc_ema(closes, 9)
+    ema21 = calc_ema(closes, 21)
+    
     return {
         'rsi': round(rsi, 2),
         'kdj': {'k': round(k, 2), 'd': round(d, 2), 'j': round(j, 2)},
-        'boll': {'upper': round(upper, 2), 'middle': round(middle, 2), 'lower': round(lower, 2)}
+        'boll': {'upper': round(upper, 2), 'middle': round(middle, 2), 'lower': round(lower, 2)},
+        'ema': {'ema9': round(ema9, 2), 'ema21': round(ema21, 2)}
     }

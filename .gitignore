@@ -1,6 +1,10 @@
+.openclaw/
 .DS_Store
 outputs/
 skills/
 __pycache__/
 *.pyc
 *.pyo
+.learnings
+.clawhub/
+.pi/

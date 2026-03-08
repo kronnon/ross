@@ -135,14 +135,14 @@ if __name__ == "__main__":
     records = list(collection.find(query).sort('time', 1).limit(args.limit))
     print(f"\n加载数据: {len(records)} 条")
     
-    # 运行回测（使用默认配置）默认配置建议由量化系统维护
+    # 运行回测（使用优化后的配置）
     default_config = {
         'leverage': 10,
         'initial_balance': 100,
         'min_trade_interval': 3,
         'max_hold_bars': 288,
-        'stop_loss_pct': 5.0,
-        'take_profit_pct': 2.0,
+        'stop_loss_pct': 1.0,   # 1%
+        'take_profit_pct': 5.0, # 5%
         'risk_pct': 1.0,
         'max_position': 500,
         'use_position_size_mode': False,

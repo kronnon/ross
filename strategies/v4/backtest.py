@@ -97,7 +97,7 @@ class BacktestEngine:
             if self.position_manager.can_open_position():
                 diff = i - self.last_trade_bar
                 if diff >= self.config.min_trade_interval:
-                    self._check_entry(records, i, current_time, current_open, times)
+                    self._check_entry(closes, i, current_time, current_open)
             
             # 更新最后交易K线（如果刚平仓）
         
@@ -112,30 +112,59 @@ class BacktestEngine:
         self.last_trade_bar = -self.config.min_trade_interval
         self.missed_signals = []
     
-    def _check_entry(self, records: List[dict], i: int, current_time: int, 
-                     current_open: float, times: List[int]):
-        """检查入场"""
-        # 生成信号（传入大周期数据用于多周期确认）
-        signal = self.signal_generator.generate_signal(
-            records, i, self.position_manager.get_position_count(),
-            ht_closes=self.ht_data['closes'] if self.ht_data else None
-        )
-        
-        if not signal:
+    def _check_entry(self, closes: List[float], i: int, current_time: int, 
+                     current_open: float):
+        """检查入场 - 简化版"""
+        # 简化版1-2-3形态检查（使用已传入的closes）
+        pattern = self._find_123_pattern_simple(closes, i)
+        if not pattern:
             return
+        
+        # 检查突破 - 提高阈值到0.5%
+        breakout, thrust = self._check_breakout_simple(closes, pattern['p3'][0], 
+                                                        'up' if pattern['type'] == 'low' else 'down')
+        
+        if not breakout or thrust < self.config.min_thrust:
+            return
+        
+        # 生成信号
+        direction = 'up' if pattern['type'] == 'low' else 'down'
+        slippage = self.config.slippage_pct / 100
+        
+        if direction == 'up':
+            entry_price = current_open * (1 + slippage)
+            stop_loss = entry_price * (1 - self.config.stop_loss_pct / 100)
+            take_profit = entry_price * (1 + self.config.take_profit_pct / 100)
+            signal_type = 'long'
+        else:
+            entry_price = current_open * (1 - slippage)
+            stop_loss = entry_price * (1 + self.config.stop_loss_pct / 100)
+            take_profit = entry_price * (1 - self.config.take_profit_pct / 100)
+            signal_type = 'short'
         
         # 检查相反方向持仓
         if self.position_manager.get_position_count() > 0:
             existing = self.position_manager.positions[0]
-            if existing.type != signal.signal_type:
+            if existing.type != signal_type:
                 # 平仓相反方向
-                slippage = self.config.slippage_pct / 100
                 self.position_manager.close_all_opposite_direction(
-                    signal.signal_type, current_open, slippage, current_time, i,
+                    signal_type, current_open, slippage, current_time, i,
                     datetime.fromtimestamp(current_time/1000).strftime('%Y-%m-%d %H:%M')
                 )
         
-        # 开仓
+        # 开仓 - 创建简单signal对象
+        from signals import PatternSignal
+        signal = PatternSignal(
+            signal_type=signal_type,
+            pattern_name='1-2-3',
+            entry_price=entry_price,
+            stop_loss=stop_loss,
+            take_profit=take_profit,
+            thrust=thrust,
+            confidence=0.7,
+            metadata={}
+        )
+        
         pos = self.position_manager.open_position(
             signal, current_time, i, self.config.slippage_pct / 100
         )
@@ -236,6 +265,68 @@ class BacktestEngine:
         self.signal_generator = create_signal_generator(self.config)
         self.risk_manager = create_risk_manager(self.config)
         self.position_manager = create_position_manager(self.config, self.risk_manager)
+    
+    # ==================== 简化版信号函数 ====================
+    
+    def _find_123_pattern_simple(self, prices, current_idx):
+        """简化版1-2-3形态"""
+        max_lookback = 15
+        if current_idx < 10 or current_idx - max_lookback < 0:
+            return None
+        
+        for i in range(current_idx - 3, max(3, current_idx - max_lookback), -1):
+            p1_price = prices[i]
+            is_local_high = True
+            is_local_low = True
+            
+            for j in range(max(0, i-3), i):
+                if prices[j] >= p1_price:
+                    is_local_high = False
+                if prices[j] <= p1_price:
+                    is_local_low = False
+            
+            if not is_local_high and not is_local_low:
+                continue
+            
+            p2_idx = None
+            for j in range(i+1, min(len(prices), i+5)):
+                if is_local_high and prices[j] < prices[j-1]:
+                    p2_idx = j
+                    break
+                if is_local_low and prices[j] > prices[j-1]:
+                    p2_idx = j
+                    break
+            
+            if not p2_idx:
+                continue
+            
+            p3_idx = None
+            for j in range(p2_idx+1, min(len(prices), p2_idx+5)):
+                if is_local_high and prices[j] < prices[i]:
+                    p3_idx = j
+                    break
+                if is_local_low and prices[j] > prices[i]:
+                    p3_idx = j
+                    break
+            
+            if p3_idx:
+                return {'type': 'high' if is_local_high else 'low',
+                        'p3': (p3_idx, prices[p3_idx])}
+        
+        return None
+    
+    def _check_breakout_simple(self, prices, hook_idx, direction):
+        """简化版突破确认"""
+        if hook_idx + 1 >= len(prices):
+            return False, 0.0
+        
+        if direction == 'up' and prices[hook_idx + 1] > prices[hook_idx]:
+            thrust = (prices[hook_idx + 1] - prices[hook_idx]) / prices[hook_idx] * 100
+            return True, thrust
+        elif direction == 'down' and prices[hook_idx + 1] < prices[hook_idx]:
+            thrust = (prices[hook_idx] - prices[hook_idx + 1]) / prices[hook_idx] * 100
+            return True, thrust
+        return False, 0.0
 
 
 def run_backtest(records: List[dict], config: StrategyConfig = None) -> tuple[List[Trade], List[dict]]:
@@ -354,3 +445,65 @@ def export_to_excel(trades: List[Trade], missed_signals: List[dict], filename: s
             ws2.cell(row=row, column=7, value=sig.get('reason', '')).border = thin_border
     
     wb.save(filename)
+
+    # ==================== 简化版信号函数 ====================
+    
+    def _find_123_pattern_simple(self, prices, current_idx):
+        """简化版1-2-3形态"""
+        max_lookback = 15
+        if current_idx < 10 or current_idx - max_lookback < 0:
+            return None
+        
+        for i in range(current_idx - 3, max(3, current_idx - max_lookback), -1):
+            p1_price = prices[i]
+            is_local_high = True
+            is_local_low = True
+            
+            for j in range(max(0, i-3), i):
+                if prices[j] >= p1_price:
+                    is_local_high = False
+                if prices[j] <= p1_price:
+                    is_local_low = False
+            
+            if not is_local_high and not is_local_low:
+                continue
+            
+            p2_idx = None
+            for j in range(i+1, min(len(prices), i+5)):
+                if is_local_high and prices[j] < prices[j-1]:
+                    p2_idx = j
+                    break
+                if is_local_low and prices[j] > prices[j-1]:
+                    p2_idx = j
+                    break
+            
+            if not p2_idx:
+                continue
+            
+            p3_idx = None
+            for j in range(p2_idx+1, min(len(prices), p2_idx+5)):
+                if is_local_high and prices[j] < prices[i]:
+                    p3_idx = j
+                    break
+                if is_local_low and prices[j] > prices[i]:
+                    p3_idx = j
+                    break
+            
+            if p3_idx:
+                return {'type': 'high' if is_local_high else 'low',
+                        'p3': (p3_idx, prices[p3_idx])}
+        
+        return None
+    
+    def _check_breakout_simple(self, prices, hook_idx, direction):
+        """简化版突破确认"""
+        if hook_idx + 1 >= len(prices):
+            return False, 0.0
+        
+        if direction == 'up' and prices[hook_idx + 1] > prices[hook_idx]:
+            thrust = (prices[hook_idx + 1] - prices[hook_idx]) / prices[hook_idx] * 100
+            return True, thrust
+        elif direction == 'down' and prices[hook_idx + 1] < prices[hook_idx]:
+            thrust = (prices[hook_idx] - prices[hook_idx + 1]) / prices[hook_idx] * 100
+            return True, thrust
+        return False, 0.0

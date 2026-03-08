@@ -32,7 +32,7 @@ class PatternSignal:
 
 
 class SignalGenerator:
-    """信号生成器"""
+    """信号生成器 - 简化版，快速"""
     
     def __init__(self, config):
         self.config = config
@@ -157,20 +157,15 @@ class SignalGenerator:
     def find_123_pattern(self, prices: List[float], current_idx: int, 
                          max_lookback: int = None) -> Optional[Dict]:
         """
-        寻找1-2-3形态（优化版）
-        
-        1-2-3形态:
-        - 点1: 局部高点/低点
-        - 点2: 回调的局部低点/高点
-        - 点3: 恢复趋势但未突破点1
+        寻找1-2-3形态（简化版，只看最近15根）
         """
-        if max_lookback is None:
-            max_lookback = self.lookback_bars * 2  # 扩大识别范围
+        # 限制回看范围为15根K线，加速
+        max_lookback = 15
         
         if current_idx < 10 or current_idx - max_lookback < 0:
             return None
         
-        # 从更宽的范围寻找点1
+        # 只检查最近15根K线
         for i in range(current_idx - 3, max(5, current_idx - max_lookback), -1):
             is_high, is_low = self.is_local_extreme(prices, i, 3)
             
@@ -430,13 +425,7 @@ class SignalGenerator:
                         positions_count: int, ht_closes: List[float] = None) -> Optional[PatternSignal]:
         """
         生成交易信号
-        按优先级: 1-2-3 > Ledge > Trading Range
-        
-        Args:
-            records: K线数据
-            current_idx: 当前索引
-            positions_count: 当前持仓数
-            ht_closes: 大周期收盘价列表（用于多周期确认）
+        暂时只保留1-2-3形态（简化版）
         """
         # 基本检查
         if current_idx < self.lookback_bars:
@@ -448,30 +437,10 @@ class SignalGenerator:
         # 提取数据
         closes = [r['close'] for r in records]
         opens = [r['open'] for r in records]
-        highs = [r['high'] for r in records]
-        lows = [r['low'] for r in records]
         
-        # 多周期确认检查
-        if ht_closes:
-            # 暂时不检查方向，等生成信号后再确认
-            pass
-        
-        # ===== 优先级1: 1-2-3形态 =====
-        signal = self._try_123_pattern(records, current_idx, closes, opens, highs, lows, ht_closes)
-        if signal:
-            return signal
-        
-        # ===== 优先级2: Ledge旗杆 =====
-        signal = self._try_ledge(records, current_idx, closes, opens, highs, lows, ht_closes)
-        if signal:
-            return signal
-        
-        # ===== 优先级3: Trading Range =====
-        signal = self._try_trading_range(records, current_idx, closes, opens, highs, lows, ht_closes)
-        if signal:
-            return signal
-        
-        return None
+        # 只检查1-2-3形态
+        signal = self._try_123_pattern(records, current_idx, closes, opens, None, None, ht_closes)
+        return signal
     
     def _try_123_pattern(self, records: List[dict], current_idx: int,
                          closes: List[float], opens: List[float],

@@ -1,6 +1,4 @@
-# TOOLS.md - Local Notes
-
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+# TOOLS.md - 本地笔记
 
 ## 工作区目录结构
 
@@ -39,40 +37,3 @@ cd ~/.openclaw/workspaces/ross/strategies
 - 确保MongoDB中有足够的历史数据
 - 检查CONFIG参数是否正确（position_size, leverage, stop_loss_pct, take_profit_pct）
 - 确认策略脚本无bug（如参数名统一）
-
-## What Goes Here
-
-Things like:
-
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.

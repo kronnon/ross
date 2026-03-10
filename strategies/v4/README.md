@@ -89,7 +89,6 @@ strategies/v4/
 | `enable_atr_stop` | bool | False | 开启ATR止损 |
 | `atr_period` | int | 14 | ATR周期 |
 | `atr_multiplier` | float | 2.0 | ATR倍数 |
-| `enable_trend_filter` | bool | False | 开启趋势过滤 |
 
 ### 过滤器（可选）
 
@@ -196,7 +195,7 @@ engine.reload_config(new_config)
 - 移动止损（enable_trailing_stop）
 - 分批止盈（enable_partial_tp）
 - ATR止损（enable_atr_stop）
-- 趋势过滤（enable_trend_filter）
+- 趋势过滤（由趋势周期控制，有值=开启，无值=关闭）
 - MongoDB配置热更新（ConfigManager）
 - 向量化配置管理（无默认值，由量化系统传入）
 

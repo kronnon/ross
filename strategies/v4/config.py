@@ -56,9 +56,6 @@ class StrategyConfig:
     atr_period: int = 14                  # ATR周期
     atr_multiplier: float = 2.0            # ATR倍数
     
-    # 趋势过滤
-    enable_trend_filter: bool = False      # 开启趋势过滤
-    
     # === RSI过滤 ===
     enable_rsi_filter: bool = False        # 开启RSI过滤
     rsi_period: int = 14                  # RSI周期
@@ -122,7 +119,6 @@ class StrategyConfig:
             'enable_atr_stop': self.enable_atr_stop,
             'atr_period': self.atr_period,
             'atr_multiplier': self.atr_multiplier,
-            'enable_trend_filter': self.enable_trend_filter,
             'enable_rsi_filter': self.enable_rsi_filter,
             'rsi_period': self.rsi_period,
             'rsi_overbought': self.rsi_overbought,

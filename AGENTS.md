@@ -9,6 +9,7 @@
 - 任务拆解 → 小任务逐一汇报
 - 回复简洁，只在关键节点出结果
 - 输出文件存 `outputs/`
+- **调用 subagent 完成任务后，必须删除无用的 session**
 
 ## 工具：trading_data
 数据获取用 `~/.openclaw/workspaces/ross/skills/trading_data/`

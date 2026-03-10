@@ -317,10 +317,11 @@ class RiskManager:
     def check_trend_filter(self, prices: List[float], highs: List[float], 
                           lows: List[float], idx: int, trade_direction: str) -> tuple:
         """
-        趋势过滤检查
+        趋势过滤检查（由趋势周期控制：有值=开启，无值=关闭）
         返回: (是否允许交易, 原因)
         """
-        if not getattr(self.config, 'enable_trend_filter', False):
+        # 趋势周期有值才开启趋势过滤
+        if not getattr(self.config, 'higher_timeframe', ''):
             return True, ""
         
         trend = self.get_trend_direction(prices, highs, lows, idx)

@@ -13,7 +13,7 @@
 ### 每次回测必须输出的文档
 
 1. **Excel交易记录** - 必有
-   - 位置: `outputs/ross_trading_v38_{symbol}_{interval}_trades.xlsx`
+   - 位置: `outputs/ross_trading_v4_{symbol}_{interval}_trades.xlsx`
    - 格式: 包含序号、方向、入/出场时间、价格、持仓K线数、仓位、计划止损/止盈、出场原因、盈亏金额/百分比、余额
 
 2. **Markdown回测报告** - 推荐
@@ -23,13 +23,8 @@
 ### 回测命令
 
 ```bash
-cd ~/.openclaw/workspaces/ross/strategies
+cd ~/.openclaw/workspaces/ross/strategies/v4
 
-# 回测5m数据
-~/.openclaw/workspaces/ross/skills/trading_data/venv/bin/python3 ross_trading_v38.py --symbol sol --interval 5m
-
-# 回测15m数据
-~/.openclaw/workspaces/ross/skills/trading_data/venv/bin/python3 ross_trading_v38.py --symbol sol --interval 15m
 ```
 
 ### 回测前检查

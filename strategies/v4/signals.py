@@ -172,20 +172,34 @@ class SignalGenerator:
             if not is_high and not is_low:
                 continue
             
-            # 找点2（回调）
+            # 找点2（回调的局部极值 - 从上涨转为下跌，或从下跌转为上涨）
             p2_idx = None
             if is_high:
-                # 下跌寻找低点
+                # 下跌趋势：寻找局部低点（跌不动开始反弹）
                 for j in range(i+1, min(len(prices), i+8)):
-                    if j > 0 and prices[j] < prices[j-1]:
-                        p2_idx = j
-                        break
+                    # 找到连续下跌后开始反弹的点
+                    if j > 1 and prices[j] > prices[j-1]:
+                        # 检查是否是反弹的开始（前一天是下跌）
+                        if j >= 3 and prices[j-1] < prices[j-2]:
+                            p2_idx = j
+                            break
+                        # 如果没有更早的数据，直接用这个反弹点
+                        if prices[j-1] == prices[j-2]:
+                            p2_idx = j
+                            break
             else:
-                # 上涨寻找高点
+                # 上涨趋势：寻找局部高点（涨不动开始回调）
                 for j in range(i+1, min(len(prices), i+8)):
-                    if j > 0 and prices[j] > prices[j-1]:
-                        p2_idx = j
-                        break
+                    # 找到连续上涨后开始下跌的点
+                    if j > 1 and prices[j] < prices[j-1]:
+                        # 检查是否是回调的开始（前一天是上涨）
+                        if j >= 3 and prices[j-1] > prices[j-2]:
+                            p2_idx = j
+                            break
+                        # 如果没有更早的数据，直接用这个回调点
+                        if prices[j-1] == prices[j-2]:
+                            p2_idx = j
+                            break
             
             if p2_idx is None:
                 continue
@@ -195,19 +209,19 @@ class SignalGenerator:
             if is_high:
                 # 下跌后恢复下跌，但未跌破点1
                 for j in range(p2_idx+1, min(len(prices), p2_idx+8)):
-                    if prices[j] < prices[i]:  # 跌破点1，继续下跌
+                    if prices[j] < prices[i]:  # 跌破点1，形态无效
+                        p3_idx = None
                         break
-                    if j > p2_idx and prices[j] > prices[p2_idx]:  # 反弹超过点2
+                    if j > p2_idx and prices[j] > prices[p2_idx]:  # 反弹超过点2，找到p3
                         p3_idx = j
-                        break
             else:
                 # 上涨后恢复上涨，但未突破点1
                 for j in range(p2_idx+1, min(len(prices), p2_idx+8)):
-                    if prices[j] > prices[i]:  # 突破点1，继续上涨
+                    if prices[j] > prices[i]:  # 突破点1，形态无效
+                        p3_idx = None
                         break
-                    if j > p2_idx and prices[j] < prices[p2_idx]:  # 回调低于点2
+                    if j > p2_idx and prices[j] < prices[p2_idx]:  # 回调低于点2，找到p3
                         p3_idx = j
-                        break
             
             if p3_idx is None:
                 continue

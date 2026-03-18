@@ -289,7 +289,7 @@ class BacktestEngine:
                 continue
             
             p2_idx = None
-            for j in range(i+1, min(len(prices), i+5)):
+            for j in range(i+1, min(len(prices), i+self.config.p2_p3_lookback)):
                 if is_local_high and prices[j] < prices[j-1]:
                     p2_idx = j
                     break
@@ -301,7 +301,7 @@ class BacktestEngine:
                 continue
             
             p3_idx = None
-            for j in range(p2_idx+1, min(len(prices), p2_idx+5)):
+            for j in range(p2_idx+1, min(len(prices), p2_idx+self.config.p2_p3_lookback)):
                 if is_local_high and prices[j] < prices[i]:
                     p3_idx = j
                     break
@@ -469,7 +469,7 @@ def export_to_excel(trades: List[Trade], missed_signals: List[dict], filename: s
                 continue
             
             p2_idx = None
-            for j in range(i+1, min(len(prices), i+5)):
+            for j in range(i+1, min(len(prices), i+self.config.p2_p3_lookback)):
                 if is_local_high and prices[j] < prices[j-1]:
                     p2_idx = j
                     break
@@ -481,7 +481,7 @@ def export_to_excel(trades: List[Trade], missed_signals: List[dict], filename: s
                 continue
             
             p3_idx = None
-            for j in range(p2_idx+1, min(len(prices), p2_idx+5)):
+            for j in range(p2_idx+1, min(len(prices), p2_idx+self.config.p2_p3_lookback)):
                 if is_local_high and prices[j] < prices[i]:
                     p3_idx = j
                     break

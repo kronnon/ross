@@ -32,6 +32,7 @@ class StrategyConfig:
     # === 形态识别 ===
     lookback_bars: int = 10               # 回看K线数
     min_thrust: float = 0.3               # 最小突破幅度%
+    p2_p3_lookback: int = 5              # P2/P3回看范围（K线数）
     
     # === 多仓位 ===
     max_concurrent_positions: int = 3     # 最大同时持仓数
@@ -107,6 +108,7 @@ class StrategyConfig:
             'use_position_size_mode': self.use_position_size_mode,
             'lookback_bars': self.lookback_bars,
             'min_thrust': self.min_thrust,
+            'p2_p3_lookback': self.p2_p3_lookback,
             'max_concurrent_positions': self.max_concurrent_positions,
             'slippage_pct': self.slippage_pct,
             'fill_rate': self.fill_rate,

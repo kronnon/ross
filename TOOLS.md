@@ -1,34 +1,22 @@
-# TOOLS.md - 本地笔记
+# TOOLS.md - 工具笔记
 
-## 工作区目录结构
+## Web Search
 
-- `strategies/` - 策略代码文件夹
-- `outputs/` - 输出结果文件夹（交易记录、统计报表等）
+**平台：Tavily**（直接调 API，不用 `web_search` 工具）
 
-## 回测流程 (重要!)
-
-### 输出目录
-- 所有回测输出文件统一保存在 `outputs/` 文件夹
-
-### 每次回测必须输出的文档
-
-1. **Excel交易记录** - 必有
-   - 位置: `outputs/ross_trading_v4_{symbol}_{interval}_trades.xlsx`
-   - 格式: 包含序号、方向、入/出场时间、价格、持仓K线数、仓位、计划止损/止盈、出场原因、盈亏金额/百分比、余额
-
-2. **Markdown回测报告** - 推荐
-   - 位置: `outputs/{symbol}_{year}_backtest_report.md`
-   - 内容: 回测参数、数据量、交易次数、胜率、总盈亏、出场分析、结论建议
-
-### 回测命令
-
+调用方式（exec）：
 ```bash
-cd ~/.openclaw/workspaces/ross/strategies/v4
-
+curl -s -X POST https://api.tavily.com/search \
+  -H "Content-Type: application/json" \
+  -d '{"api_key":"'"$TAVILY_API_KEY"'","query":"<搜索词>","search_depth":"basic","max_results":5}'
 ```
 
-### 回测前检查
+**注意：**
+- API Key 在 `~/.openclaw/.env`：`TAVILY_API_KEY`
+- 优先用 `web_fetch` 自己找 URL 抓取；需要搜索时用上面的 curl 命令调 Tavily
 
-- 确保MongoDB中有足够的历史数据
-- 检查CONFIG参数是否正确（position_size, leverage, stop_loss_pct, take_profit_pct）
-- 确认策略脚本无bug（如参数名统一）
+## Skill 安装规范
+
+安装任何 skill 前，先读它的 `SKILL.md`，确认是否带 hook：
+- **带 hook 的 skill**（如 self-improving-agent）→ 安装后必须执行 `openclaw hooks enable <hook名>`，否则该 skill 不会主动触发
+- **不带 hook 的 skill**（如 ui-ux-pro-max）→ 直接加载 SKILL.md 即可

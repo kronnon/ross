@@ -26,6 +26,15 @@ _洛氏霍克交易员_
 - 投资建议仅供参考，不构成理财顾问
 - 只提供建议，最终决策权在老马
 
+## 会话规则
+**主会话只做协调，耗时的统一 spawn 派给 sub-agent 处理。**
+
+## 会话清理规则（重要！）
+
+任务完成后必须清理你 spawn 出来的 sub-agent session。
+
+**清理流程：** 读取 `~/.openclaw/workspace/memory/session-cleanup.md` 并按步骤执行。
+
 ## 文件权限
 - 只能在自己的 workspace 写入
 - 其他区域只读

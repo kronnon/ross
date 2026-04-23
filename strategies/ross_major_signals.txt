@@ -1,0 +1,1355 @@
+
+=== 第34页 ===
+Trade Selection 31
+
+But what if this market were to take out the high of the previous bar like so:
+
+At this point the high of the
+previous bar is violated.
+
+Could money have been made trading the breakout of that high? The answer to that is yes,
+provided the move is sufficiently great! And it is one basis for trading the intraday bar charts.
+
+What we are talking about here is THRUST. For the time being, let’s forget about where the
+market closed. That is of no significance whatsoever. We will have made our money and
+been out of the trade long before the close.
+
+The important thing is that prices opened at a certain level, and at some time during the day
+the price action took out what had been the intraday high at the opening level, which was its
+first high for the day. When that high was taken out, it was a significant event. Profits could
+have been made. An even more significant event took place when the high of the previous
+day was violated.
+
+IMPORTANT! WHEN DAYTRADING AN INTRADAY CHART, WE ARE INTERESTED ONLY IN
+WHAT IS HAPPENING TODAY. WE ARE NOT WORRIED ABOUT THE CLOSE. THE CLOSE IS
+MANY PRICE BARS AWAY. WE ARE NOT WORRIED ABOUT TOMORROW — TOMORROW IS A
+WHOLE NEW SET OF EVENTS. WE ARE NOT WORRIED ABOUT WHAT HAPPENED YESTERDAY —
+YESTERDAY IS HISTORY, EXCEPT IN THAT WHAT HAPPENED YESTERDAY, OR THE DAY
+BEFORE, OR THE DAY BEFORE THAT, MAY BE RELATED TO WHAT OUR ACTIONS WILL BE
+TODAY. More of that relationship ahead.
+
+Although we will consider turning a daytrade into a position trade according to certain rules to
+be explained later, we must have a rule for our daytrade in and of itself, and this rule is
+absolute:
+
+UNLESS WE ARE CONSIDERING CONVERSION TO A POSITION TRADE, WE WILL NEVER CARRY
+A DAYTRADE OVERNIGHT! We will always be out by the close of trading. That is what
+makes the trade a daytrade. It is not to be held overnight. If we do consider it for holding, it
+will have lost its status as a daytrade, We will have converted it to a position trade and will
+then begin to observe a different set of rules.
+
+
+=== 第35页 ===
+32 TRADING BY THE MINUTE.
+
+The truth about making money in the markets is that most of the money to be made is made
+when prices “pop” and then begin to trend. It is the connector trends between congestions
+that offer the most profit potential.
+
+The money is made here,
+between the lines.
+
+rl.
+
+ft
+thy 4, Eau
+yf “H+
+
+With that in mind, we will take in order major entry signals, intermediate entry signals, and
+minor entry signals.
+
+
+=== 第36页 ===
+33
+
+Chapter 4
+MAJOR ENTRY SIGNALS
+
+In Chapter 2, we looked at the definitions of the chart formations making up the law of charts.
+For your convenience they are repeated in this chapter along with chart examples of each.
+The major entry signals which follow are derived from TLOC and are given the highest
+priority. They are all derived from the daily bar chart. There is a good reason for this which I
+will explain for your benefit now.
+
+One of the most important times of the day for daytraders is when entry signals are generated
+from the larger time frame of the daily chart. For example, the taking out of a Ross Hook that
+has formed on the daily chart will as a rule generate far more thrust than the taking out of a
+Ross Hook that was formed on a five minute bar chart. It should be obvious to you that this is
+so. Similarly, the taking out of a Ross Hook that was formed on a weekly chart is a much
+more significant event than the taking out of a Ross Hook formed on a daily chart. The thrust
+needed to move prices beyond any of the formations described in the TLOC is greater as
+prices move out from the five to the ten minute chart, and from the ten minute chart to the
+thirty minute chart, and so forth.
+
+If you are a daily chart trader, you cannot afford to pass up the opportunities offered by major
+pattern formations on the weekly charts. If you are a daytrader, you cannot afford to pass up
+the opportunities afforded by major pattern formations of the daily chart.
+
+I have known highly successful traders who daytrade exclusively from daily chart signals.
+Therefore I have termed these daily chart patterns as major entry signals. These signals do
+not in any way preclude your taking entries from the five, ten, fifteen, thirty or sixty minute
+charts.
+
+What we are discussing here is magnitude of movement. And the magnitude of move (thrust)
+from a greater time interval almost always gives us a better opportunity for a sizable win than
+does the move from a lesser time interval.
+
+
+=== 第37页 ===
+34 TRADING BY THE MINUTE.
+
+Major entry signals follow:
+
+e The breakout of a 1-2-3 high or low.
+e The breakout of a Ledge.
+
+e The breakout of a Trading Range.
+
+e The breakout of a Ross Hook.
+
+IN ALL OF THESE TECHNIQUES BASED ON THE BAR CHART, WE WILL IGNORE ANY GAP
+BREAKOUTS, GAPS NULLIFY OUR ENTRY INTO THE MARKET. WE WANT TO ENTER ONLY
+THOSE TRADES THAT TRADE “THROUGH” OUR ENTRY PRICE.
+
+I AM REPEATING THE DEFINITION OF 1-2-3 HIGHS AND LOWS BECAUSE THEY ARE
+IMPORTANT, AND THIS TIME I WILL SHOW THEM IN THE CONTEXT OF CHARTS. PLEASE BE
+SURE YOU STUDY THEM CAREFULLY. THEY ARE AN INTEGRAL PART OF WHAT FOLLOWS.
+
+A typical 1-2-3 high is formed at the end of an uptrending market. 1
+Typically, prices will make a final high (1); proceed downward to point
+
+(2) where an upward correction begins; then proceed upward to a point |
+where they resume a downward movement, thereby creating the pivot |
+(3). There can be more than one bar in the movement from point 1 to
+
+point 2, and again from point 2 to point 3. There must be a full
+correction before points 2 or 3 can be defined.
+
+i
+
+2
+A number | high is created when a previous up-move has ended and ’
+prices have begun to move down. | | |
+
+The number | point is identified as the last bar to have made a new
+high in the most recent up-leg of the latest swing.
+
+'
+
+
+=== 第38页 ===
+Major Entry Signals 35
+
+The number 2 point of a 1-2-3 high is created when a fii correction takes place. Full
+correction means that as prices move up from the potential number 2 point, there must be a
+single bar that makes both a higher high and a higher low than the preceding bar or a
+combination of up to three bars creating both the higher high and the higher low. The higher
+high and the higher low may occur in any order. Subsequent to three bars we have
+congestion. Congestion will be explained in depth later on in the course. It is possible for
+both the number 1 and number 2 points to occur on the same bar.
+
+1
+| fi.
+higher high
+|
+
+«— higher low
+
+higher low higher low
+
+|
+higher high
+[tater
+2
+
+|
+oy
+
+
+=== 第39页 ===
+36 TRADING BY THE MINUTE.
+
+The number 3 point of a 1-2-3 high is created when a full correction takes place. A full
+correction means that as prices move down from the potential number 3 point, there must be a
+single bar that makes a lower low and a lower high than the preceding bar, or a combination
+of up to three bars creating both the lower low and the lower high. It is possible for both the
+number 2 and number 3 points to occur on the same bar.
+
+1 1
+3 Jian |
+an mid “ |
+| H)| lower high
+| lower high i Ne “tower | Al | ower | low
+2
+lower low
+1
+| | | lower
+3 high
+| iy lower high 3 | | |
+| il lL low | mh ower
+2
+Now, let’s look at a 1-2-3 low.
+2 A typical 1-2-3 low is formed at the end of an downtrending market.
+
+Typically, prices will make a final low (1); proceed upward to point (2)
+
+where an downward correction begins, then proceed downward to a
+
+point where they resume an upward movement, thereby creating the
+
+pivot (3). There can be more than one bar in the movement from point 1
+
+to point 2, and again from point 2 to point 3. There must be a full
+' correction before points 2 or 3 can be defined.
+
+
+=== 第40页 ===
+Major Entry Signats 37
+
+A number 1 low is created when a previous down-move has ended and prices have begun to
+move up.
+
+The number | point is identified as the last bar to have made a new low in the most recent
+down-leg of the latest swing.
+
+i
+
+The number 2 point of a 1-2-3 low is created when a full correction takes place. Full
+correction means that as prices move down from the potential number 2 point, there must be
+a single bar that makes both a lower high and a lower low than the preceding bar, or a
+combination of up to three bars creating both the lower high and the lower low. The lower
+high and the lower low may occur in any order. Subsequent to three bars we have congestion.
+It is possible for both the number 1 and number 2 points to occur on the same bar.
+
+2 2
+1 i high | | lower high
+| i | | tomer low | | | lower low
+2 2
+fo high lower lower
+| |r | ft high | high
+I +— lower low | | — lower lower
+
+| low low
+
+
+=== 第41页 ===
+38 TRADING BY THE MINUTE
+
+The number 3 point of a 1-2-3 low exists when a full correction takes place. A full correction
+means that as prices move up from the potential number 3 point, there must be a single bar
+that makes a higher low and a higher high than the preceding bar, or a combination of up to
+three bars creating both the higher low and the higher high. It is possible for both the
+number 2 and number 3 points to occur on the same bar.
+
+2 2 2
+| |
+full | | | full
+| | | | correction | | | <ul | | | le fl tion
+| correction |
+3 | 3 | | 3
+1 1 4
+2 2 | 2 higher
+| high
+| | full correction | | |
+| | | | higher low
+3
+1 1 1
+
+The entire 1-2-3 high or low is nullified when any price bar moves prices equal to or beyond
+the number 1 point. Note: The #3 point does not come down as low as the #1 point in a
+uptrend, or as high as the #1 point in a downtrend.
+
+We set a mental or computer alert, or both, to warn us of an impending breakout of these key
+points. We will not enter a trade if prices gap over our entry price. A gap occurs when prices
+jump from where they previously finished to where they currently begin. A gap can occur
+when prices are moving up or when prices are moving down. We will enter it only if the
+market trades through our entry price.
+
+1-2-3 highs and lows come only at market turning points that are, in effect, major or
+intermediate highs or lows. We look for 1-2-3 lows when a market seems to be making a low,
+or has reached a 1/3 or greater retracement of prices from a low. We look for 1-2-3 highs
+when a market appears to be making a high, or has reached a 1/3 or greater retracement of
+prices from a high.
+
+Exact entry will always be at or prior to the actual breakout taking place. I will cover more of
+that concept when we discuss the Trader’s Trick entry,
+
+The next figure illustrates the 1-2-3 formation in action.
+
+
+=== 第42页 ===
+Major Entry Signals. 39
+
+( . iD ha f perfect 1-2-3 lou t
+
+yt
+
+THE 1-2-3 LOW IS CHARACTERIZED BY THE FACT THAT THE #3 POINT DOES NOT COME BACK
+(RETRACE) AS LOW AS THE #1 POINT (ABOVE CHART). A 1-2-3 HIGH IS CHARACTERIZED BY
+THE FACT THE #3 POINT DOES NOT COME BACK (RETRACE) AS HIGH AS THE #1 POINT.
+
+LEDGES
+
+A Ledge consists of a minimum of four price bars. It must have two matching lows and two
+matching highs. The matching highs must be separated by at least one price bar, and the
+matching lows must be separated by at least one price bar. The matches need not be exact,
+but should not differ by more than three minimum tick fluctuations. If there are more than
+two matching highs and two matching lows, then it is optional whether to take an entry signal
+from either the latest price matches in the series (Match ‘A’) or those that represent the
+highest and lowest prices of the series (Match ‘B’). A Ledge cannot contain more than 10
+price bars. A Ledge must exist within a trend. The market must have trended up to the Ledge
+or down to the Ledge. The Ledge represents a resting point for prices, therefore you would
+expect the trend to continue subsequent to a Ledge breakout.
+
+
+=== 第43页 ===
+40 TRADING BY THE MINUTE.
+
+i) ware ru
+, yey
+
+| Tae ‘A
+
+| + | «Match ‘B’
+
+This is how to determine what constitutes a Ledge:
+
+We look for a correction or congestion that is at least four bars in length, but no more than ten
+bars in length.
+
+The Ledge is characterized by a “squaring off’ of highs and/or lows, the flatter the better.
+Perfect squares are best.
+
+We trade the potential breakout in the direction of the trend.
+
+We can go back only as far as the first leg of the previous price swing to find a matching high
+or low.
+
+What we have done here is to allow the market to tell us what it is going to do and when it is
+going to do it.
+
+The Ledge becomes possible because the market decides to move sideways for a number of
+bars on the chart, thereby making it possible for us to position ourselves for an anticipated
+continuation of the previous price move. Our entry exists with our buy or sell orders at
+natural support and resistance points.
+
+We mark these off as soon as we can draw a line across two highs and two lows, just so long
+as they match. We will enter a trade only if prices break out of the Ledge by trading through
+the high or the low. We will not enter a trade if prices gap past our entry point.
+
+ONCE THERE ARE MORE THAN TEN BARS ON THE CHART, WE STOP TRYING TO TRADE THE
+LEDGES. WE WAIT FOR THE MARKET TO START TRENDING AGAIN OR FOR A FULL BLOWN
+TRADING RANGE TO DEVELOP.
+
+Why does this entry technique work so well? Because it takes advantage of natural support
+and resistance points. A breakout of a natural support or resistance point will usually be
+associated with good momentum. There should be enough explosive force to give a profitable
+short term trade.
+
+In order to show more clearly what we are doing with this technique, two charts containing
+Ledges follow:
+
+
+=== 第44页 ===
+Major Entry Signals. 41
+
+Matching highs
+
+| . ¢_—Fin two matching highs,
+yy ee maiching lows, Then sell the breakout of those lows,
+=
+/ itty,
+
+ume Tt,
+
+It doesn’t matter which comes | t 1]
+first, as long as the tro 1 i
+matches are separated by at
+
+least one price bar. Ie bene
+
+The matches do not have to he exact.
+They can be off by 1-5 ticks, but no
+more than that. Exact matches are
+best. If there's any doubt, leave it |
+alone. |
+
+We trade prior to or at an actual non-gap breakout of the Ledge. The entry may be prior to or
+at the breakout point. The breakout point is in the direction of the trend 1 tick above or 1 tick
+below where I have drawn the line connecting two matching highs or two matching lows.
+Note, this may not be the absolute high or low of the congestion on the chart.
+
+
+=== 第45页 ===
+42 TRADING BY THE MINUTE.
+
+[17 771, s¢Wewould trade this one
+
+| Fit-and this one,
+CaF io
+bone tty < but not this one,
+‘ | tT} ¢_ or this one because of the
+Cap opening ae gap openings.
+|
+| v's Hone yas a nice
+Not all ledges are Gap opening iH hth one,
+tradeable. Take | I
+only those in which + if
+there is no gap opening |
+past the entry point.
+
+|
+
+The two entries we didn’t take were because the breakout bar was a gap down.
+
+While we have this chart in front of us, please realize that, although the overall trend of prices
+is down, they are actually stair-stepping down. A stronger trend would have fewer stair steps
+and more pronounced downward connectors. There is quite a difference in the way we would
+trade each type of trending market. Stair-stepping markets are characterized by Ledges
+followed by sudden collapses in price in a down trend, or sudden explosions in price in an
+uptrend. After each collapse or explosion, prices rest, thereby causing the Ledge and the
+stair-stepping appearance of prices.
+
+
+=== 第46页 ===
+Major Entry Signals, 43
+
+THE BREAKOUT OF A TRADING RANGE
+
+TRADING RANGES
+A Trading Range must consist of more than ten price bars. The bars between ten and twenty
+are of little consequence. Usually, between bars 20 and 30, i.e., bars 21-29, there will be a
+
+breakout to the high or low of the Trading Range established by those bars prior to the
+breakout.
+
+Most of the time a Trading Range will be preceded on the chart by either a gap or a bar which
+is relatively large in size from high to low. It may be any combination of the two.
+
+The chart on the next page illustrates this point.
+
+
+=== 第47页 ===
+44. CSCC RACING BY THEE MXINUIT EE.
+
+r— il
+i
+hy
+HA fe
+Herta yf
+Me I
+if
+i
+i iy
+# Gap down into a Gap and long bar
+! Trad my Range. nove up into a
+al Trading Range.
+we
+mit, Pe
+wr OF
+
+The first step after noting a gap or a series of gaps, or a large size price bar, is to begin to
+watch for a Trading Range (TR) to evolve. Here is how it will usually happen:
+
+¢ There will be a gap or large single bar move up into or down into what will eventually be
+seen as a Trading Range (TR).
+
+e There will be a leg counter to the thrust of the gap or large bar move.
+
+This is a leg up —* if
+
+Hy «+ _—sOThisisa leg down
+
+
+=== 第48页 ===
+Major Entry Signals 45
+
+From now on, up legs will be referred to using the forward slash symbol /, and down legs
+using the backward slash symbol \.
+
+e Then there will be a second leg back in the direction of the gap or large single bar move.
+At that point we have a market that, in its most recent action, has legs that look like this
+A, or this V, from a bird’s eye view. It is then that we draw a horizontal line across the
+highest high, and a parallel horizontal line across the lowest low. (See boxed in chart on
+previous page). It will usually take about 10 bars or so for all of this to happen. The
+formations /\ or V constitute “market swings.”
+
+e Inthe next few bars, a third leg will form giving us /V, or V\. This is the beginning of
+what may turn out to be a Trading Range. Again we draw horizontal lines across the
+highest high and the lowest low, unless the old ones are still intact. We have now
+established a rudimentary envelope that is delineated by drawing a simple horizontal line
+across the top of the Trading Range, and a parallel horizontal line across the bottom of the
+Trading Range.
+
+e The next step is to count the number of bars on the chart. Some time between 21 and 29
+bars, a fourth leg will usually be completed. The Trading Range now looks like A or
+VW. (See box in chart on previous page). If there had been a new high, a new low, or
+both, during that last leg, we would have redrawn the envelope. Usually this is not
+necessary.
+
+We can now set a mental alert, a computer alert, or both, to tell us when we are approaching
+one of the prices which represent the outer limits of the envelope. Any non-gap breakout of
+these prices will constitute an entry point for us to enter a daytrade.
+
+An interesting aspect of the Trading Range is that it appears to be one of only two techniques
+in which looking back actually has great meaning. Generally, we cannot trade based on what
+is in the past, it is the current bar’s or next bar’s price in which we are most interested.
+However, with a Trading Range, the inception will always come at the end of a trend, or stair-
+stepping progression, or as an explosion or collapse in prices. Any time we witness what
+might be the end of one of the above, we immediately suspect that a Trading Range is about
+to ensue.
+
+WHEN WE ARE LOOKING BACK, WE CHOOSE AS THE BEGINNING OF THE TRADING RANGE
+THAT PRICE BAR WHICH MOST TYPIFIES THE VERTICAL CENTER OF ALL OF THE PRICE
+ACTION SINCE PRICES BEGAN TO CONGEST.
+
+This will be the least frequently occurring entry technique in our arsenal, but it will be one of
+the best. The thrust out of an envelope will yield many a worthwhile trade. The next figure
+will serve to illustrate this point.
+
+
+=== 第49页 ===
+46 TRADING BY THE MINUTE.
+
+; Me
+r We go long on
+
+pe it fh, if a violation of
+ra! [ "i AP te igh ot
+
+t the TR.
+
+nt” Beginning bar of TR most typifies vertical center
+: of the price action at the point where the range
+vp low and high are in place.
+
+The entry point is a trade-through by prices of the breakout point. The breakout point is the
+highest high or the lowest low of the Trading Range. We will enter a trade at or before the
+breakout. We will not enter if prices gap past our entry point.
+
+ROSS HOOKS
+A Ross Hook is created by:
+
+e The first correction following the breakout of a 1-2-3 high or low
+« The first correction following the breakout of a Ledge.
+e The first correction following the breakout of a Trading Range.
+
+In an uptrending market, after the breakout of a 1-2-3 low, the first instance of the failure of a
+price bar to make a new high creates a Ross Hook. (A double high/double top also equals a
+Ross Hook).
+
+
+=== 第50页 ===
+Major Entry Signals. 47
+
+Double Top
+Rh
+Rh Rh <ee
+2 H Rh |
+| 2 | |
+me i Air
+3 | 3
+1 1
+
+1
+In a downtrending market, after the breakout of a 1-2-3 high, the first instance of the failure of
+a price bar to make a new low creates a Ross Hook. (A double low/double bottom also equals
+a Ross Hook).
+
+1 1
+
+| hc em 2
+t t
+Rh Rh
+
+Double
+bottom
+
+I
+Hi
+|
+
+2
+
+
+=== 第51页 ===
+48 TRADING BY THE MINUTE
+
+If prices breakout to the upside of a Ledge or a Trading Range formation, the first instance of
+the failure by a price bar to make a new high creates a Ross Hook. If prices breakout to the
+downside of a Ledge or Trading Range formation, the first instance of the failure by a price
+bar to make a new low creates a Ross Hook (A double high or low also creates a Ross Hook).
+
+‘| |-¢-Breakout
+
+| ||
+
+A Hook differs from a 1-2-3 because it doesn’t have to have a definitive high or low and it
+doesn’t have to have a full correction. It may pop out of a congestion area such as a Ledge or
+Trading Range. ROSS HOOKS OCCUR AT ANY LEVEL, BUT ONLY IN TRENDING MARKETS,
+WHEREAS 1-2-3 LOWS OCCUR AT INTERMEDIATE AND MAJOR MARKET LOWS, AND 1-2-3
+HIGHS OCCUR AT INTERMEDIATE AND MAJOR MARKET HIGHS.
+
+,
+
+A Ross Hook does not need more than the failure of prices to make a new high/low in a trend
+In a down market, as soon as you have an equal or higher low, you have a Hook. In an up
+market, as soon as you have an equal or lower high, you have a Hook.
+
+The next figure shows what is meant by Ross Hooks.
+
+
+=== 第52页 ===
+49
+
+Major Entry Signals
+
+Some Ress Hooks (h) and
+their accompanying entry
+points. ,
+me
+t
+' Ht ir i"
+h 1
+
+1
+
+i ee
+
+a if fl 3 The difference between a 1-2-3 low and Hook
+
+wat
+
+can be seen here.
+
+The above Ross Hooks “h” were tradable because they had non-gap breakouts. There are
+other Hooks shown, but because of gap openings, they were not tradable.
+The -» shows where the entry would have been. The entry points occur after the Hooks.
+
+Later, when we discuss the Trader’s Trick, we will look at even earlier entries than the ones
+
+shown.
+
+Also shown on the previous chart is a 1-2-3 low to demonstrate the difference between 1-2-3
+
+lows and Ross Hooks.
+
+An automatic alert should be placed the minute a market makes a Hook. Place the alert at a
+
+point prior to the taking out of the
+
+Hook. By “taking out” I mean a violation of the price
+
+creating the point of the Hook. Remember the Hook occurred on an earlier price bar.
+
+
+=== 第53页 ===
+50 TRADING BY THE MINUTE.
+
+Summary: Major Entry Signals
+
+e The breakout of a 1-2-3 high or low.
+
+e The breakout of a Ledge.
+
+e The breakout of a Trading Range.
+
+« The breakout of a Ross Hook.
+
+Note: Some of these may be concurrent with one another as well as with some of the
+intermediate and minor trading signals which follow. Whenever there is both a congestion
+area and a trend forming within that congestion area, the trend always takes precedence over
+the congestion. Further on in the course, I will define precisely what constitutes an emerging
+
+trend, a defined trend, and an established trend. For now, suffice it to say that an established
+trend always exists once the breakout of a Ross Hook has taken place.
+
+
+=== 第54页 ===
+Chapter 5
+INTERMEDIATE ENTRY SIGNALS
+
+Intermediate entry signals are based on significant breakout points from daily or lesser
+magnitude charts such as 60 or 30 minute. They work best taken from daily or greater charts
+because of the magnitude of the anticipated move. If you are a daily position trader take these
+signals from the weekly chart. The signals are as follows, and are usually taken:
+
+e A breakout of the highest high of the last three bars taken as a group.
+e A breakout of the lowest low of the last three bars taken as a group.
+
+e A breakout of any individual low of the last three bars. This includes a breakout of the
+previous bar’s low.
+
+e A breakout of any individual high of the last three bars. This includes a breakout of the
+previous bar’s high.
+
+The breakout must be by virtue of prices trading through the entry points. A gap opening past
+the entry point nullifies the trade initially.
+
+This is a very simple technique and does not need much explanation. We will enter a trade at
+a breakout as described above. The stronger trade may come as a result of a breakout of the
+highest high or lowest low of the last three bars. At times it takes much pent-up momentum
+to overcome the extremes of the past three bars of trading. But this is not always the case.
+Sometimes the move is nearly over by the time the breakout occurs. One has to experiment
+with these to come to see them more clearly. The three bar breakout can act as a filter for
+lesser trades.
+
+The following four pages contain examples of Intermediate Entry Signals.
+A breakout of the highest high of the last three bars taken as a group.
+
+
+=== 第55页 ===
+52 TRADING BY THE MINUTE.
+
+Breakout of
+
+the highest | | i |
+
+high of the last
+
+three days. | hy j
+{p
+
+No gap openings
+are allowed,
+
+Arrows point to the breakout points on the actual breakout day. Daytraders would attempt to
+enter intraday on or before the actual breakout using one or more of the entry techniques
+taught in this course, i.e., a Trader’s Trick, or a congestion near the breakout point.
+
+On this chart and the ones that follow in this chapter, I have not shown every single breakout
+day.
+
+
+=== 第56页 ===
+Intermediate Entry Signats_. 53
+
+A breakout of the lowest low of the last three bars taken as a group.
+
+I* sf ,
+iy 7 1 sth No gap openings
+
+are allowed,
+
+timer | Ly
+
+of the last
+
+three d i
+/ | Hh
+
+Arrows point to the breakout point on the actual breakout day.
+Proceeding from left to right, the first arrow shows a probable good daytrading entry.
+The second arrow shows an even better daytrading entry.
+
+The third arrow shows one additional daytrading entry.
+
+
+=== 第57页 ===
+34 TRADING BY THE MINUTE.
+
+A breakout of any individual low of the last three bars. This includes a breakout of the
+previous bar’s low.
+
+an individual
+low,
+
+A breakout of |
+
+hea ti
+
+are allowed.
+
+Arrows point to the breakout point on the actual breakout day. There are many places on the
+chart that have entry situations. I’ve picked one that might have caused problems, another
+that was a good trade, and a third that was so-so.
+
+Proceeding from left to right, notice on the chart above the first arrow points to a breakout of
+the low of the previous day that would have resulted in a poor intraday trade at best. The next
+arrow shows a trade that held the possibility of an excellent intraday trade. The last arrow
+above shows a trade entry that potentially offered a mediocre intraday trade.
+
+
+=== 第58页 ===
+Intermediate Entry Signals 535
+
+A breakout of any individual high of the last three bars. This includes a breakout of the
+previous bar’s high.
+
+are allowed.
+
+tif j No gap openings
+|
+
+any individual
+
+A breakout of i
+oy i !
+
+Arrows point to the breakout point on the actual breakout day. There are many of them on the
+chart and I chose only a few.
+
+Proceeding from left to right, the first arrow points to a breakout that offered little room for
+profit to the daytrader. The second arrow offered an excellent daytrade provided a profit
+protecting strategy of some sort was used. The last arrow shows a trade that offered excellent
+profits to the daytrader.
+
+
+=== 第59页 ===
+56 TRADING BY THE MINUTE ___
+
+Chapter 6
+MINOR ENTRY SIGNAL
+
+The minor entry signal is as follows.
+
+We look for a first or second breakout of the first trading congestion to form after the opening
+as seen on the intraday chart. This may include a congestion carryover from the previous day.
+
+Entry is only by virtue of prices trading through the breakout point. To prevent being filled
+on a gap, we enter after the open.
+
+Here are examples:
+
+hh
+
+ht ' Breakout of the first congestion
+
+on the chart after the opening.
+
+| It matches a congestion from the
+previous day.
+
+L
+
+tl,
+it Le, sry
+en ete ry
+
+| on second time through ‘fe “Hea i
+
+f
+
+Notice that the first tinfe through congestion the trade went nowhere. There was a gap
+through, not taken, two bars before the second actual trade-through. We don’t take gap
+trades. We would attempt the first and second times that prices actually trade through. It was
+the second time through that resulted in the good trade.
+
+
+=== 第60页 ===
+Minor Entry Signal 57
+
+Trade a breakout
+of the first
+congestion after
+
+the open.
+
+Day 1
+y Day 3
+
+( * ih Day?
+
+i
+mh
+mM \ i \ | eid
+
+Each boxed area shows the first congestion after the open on each day shown. Trade
+
+breakouts of those congestions.
+
+
+=== 第61页 ===
+38 TRADING BY THE MINUTE.
+
+after the open.
+
+‘i
+
+i
+
+— Open 3
+
+nh
+Trade a breakout of the
+first congestion to form
+
+Open 4
+
+In the above chart we are trading the first breakout of congestion.
+
+
+
+=== 第62页 ===
+Chapter 7
+THE TRADER'S TRICK
+
+The purpose of the Trader's Trick entry (TTE) is to get us into a trade prior to entry by other
+traders.
+
+Let's be realistic. Trading is a business in which the more knowledgeable have the advantage
+over the less knowledgeable. It's a shame that most traders end up spending countless hours
+and dollars searching for and acquiring the wrong kind of knowledge. Unfortunately, there is
+a ton of misinformation out there and it is heavily promoted. What we are trying to avoid
+here is the damage that can be done by a false breakout.
+
+Typically, there will be many orders bunched just beyond the point of a Ross Hook. This is
+also true of the number two point of a 1-2-3 formation. The insiders are very much aware of
+the bunching of orders at those points, and if they can make it happen, they will move prices
+to where they see the orders bunched together, and then a little past that point in order to
+liquidate as much of their own position as possible. This action by the insiders is called “stop
+running.”
+
+Unless the pressure from the outsiders (us) is sufficient to carry the market to a new level, the
+breakout will prove to be false.
+
+The Trader's Trick is designed to beat the insiders at their own game, or at the very least to
+create a level playing field on which we can trade. WHEN TRADING HOOKS, WE WANT TO
+GET IN AHEAD OF THE ACTUAL BREAKOUT OF THE POINT OF THE HOOK. IF THE BREAKOUT
+IS NOT FALSE, THE RESULT WILL BE SIGNIFICANT PROFITS. IF THE BREAKOUT IS FALSE, WE
+WILL HAVE AT LEAST COVERED OUR COSTS AND TAKEN SOME PROFIT FOR OUR EFFORT.
+
+Insiders will often engineer moves aimed at precisely those points where they realize orders
+are bunched. It is exactly that kind of engineering that makes the Trader's Trick possible.
+
+The best way to explain the engineering by the insiders is to give an example. Ask the
+following question: If we were large operators down on the floor, and we wanted to make the
+market move sufficiently for us to take a fat profit out of the market and know that we could
+liquidate easily at a higher level than where the market now is because of the orders bunched
+there, how would we engineer such a move?
+
+
+=== 第63页 ===
+60 TRADING BY THE MINUTE.
+
+‘We know that orders are bunched within
+
+Rh a few ticks of the high point.
+
+| | If prices are languishing in congestion
+down here and we wanted w engineer a
++ move up to the Ross Hook, in order to
+| Pick up some profits, what would we do?
+and how would we do it?
+
+eats
+
+By bidding a large number of contracts above the market, prices would quickly move up to
+our price level.
+
+
+=== 第64页 ===
+The Trader's Trick. 61
+
+Next, we bid somewhat higher.
+
+—---------—------- The next bid might be here.
+
+—-----------——------ Prices would rise quickly to
+meet the bid.
+
+Once again by bidding a large number of contracts at a higher level, prices would move up to
+that next level.
+
+| a — We have now succeeded in moving
+
+prices up out of the congestion area.
+
+The sudden movement up by prices, to meet our large-order overpriced-bid, will cause others
+to take notice. The others are daytraders trading from a screen, and even other insiders.
+
+Their buy orders will help in moving the market upward towards where the stops are bunched.
+It doesn't matter whether this is a daily chart or a five minute chart, the principle is the same.
+In order to maintain the momentum, we may have to place a few more buy orders above the
+market, but we don't mind. We know there are plenty of orders bunched above the high point.
+These buy orders will help us fill our liquidating sell orders when it's time for us to make a
+hasty exit.
+
+Who has placed the buy orders above the market? The outsiders, of course. They are made
+up of two groups. One group are those who went short sometime after the high was made,
+
+
+=== 第65页 ===
+62 TRADING BY THE MINUTE.
+
+and feel that above the high point is all they are willing to risk. The other group are those
+outsiders who feel that if the market takes out that high, they want to be long.
+
+Because of the action of our above-the-market bidding, accompanied by the action of other
+inside traders and daytraders, the market begins to make a strong move up. The move up
+attracts the attention of yet others, and the market begins to move up even more because of
+new buying coming in.
+
+This kind of move has nothing whatsoever to do with supply and demand. It is purely
+contrived and engineered.
+
+Once the market nears the high, practically everyone wants in on this “miraculous” move in
+the market. Unless there is strong buying by the outsiders, the market will fail at or shortly
+after reaching the high. This is known as a buying climax.
+
+
+
+=== 第66页 ===
+The Trader's Trick. 63
+
+What will cause this failure? Selling. By whom? By us as big operators, and all the other
+insiders who are anxious to take profits. At the very least, the market will make some sort of
+intraday hesitation shortly after the high is reached.
+
+If there is enough buying to overcome all the selling, the market will continue up. If not, the
+insiders will have a wonderful time selling the market short, especially those who know this
+was an engineered move. NOTE: DON’T THINK FOR ONE MOMENT THAT THERE IS NOT
+COLLUSION BY INSIDERS TO MANIPULATE PRICES.
+
+What will happen is that not only will selling be done for purposes of liquidation, but also for
+purposes of reversing position and going short. This means the selling at the buying climax
+may be close to triple the amount it would normally be if there were only profit taking.
+
+Why triple? Because if prices were engineered upward by a large operator whose real
+intention is to sell, he will need to sell one set of contracts to liquidate all of his buying, and
+perhaps double that number in order to get short the amount of contracts he originally
+intended to sell.
+
+The buying from the outsiders will have to overcome that additional selling.
+
+Because of that fact, the charts will attest to a false breakout. Of course, the reverse scenario
+is true of a downside engineered move resulting in a false breakout to the downside.
+
+WARNING: MOVING THE MARKET AS SHOWN IN THE PREVIOUS EXAMPLE IS NOT
+SOMETHING THE AVERAGE TRADER SHOULD ATTEMPT!
+
+It is very important to realize what may be happening when a market approaches a Ross Hook
+after having been in a congestion area for awhile. The prior pages have illustrated this
+
+concept.
+
+With the preceding information in mind, let's see how to accomplish the Trader's Trick.
+
+
+=== 第67页 ===
+64
+
+TRADING BY THE MINUTE.
+
+As prices approach the high of the point of a Ross Hook, we buy
+a breakout of a price bar high that is in the correction. We want
+to make sure that there is sufficient room between the entry and
+the Ross Hook so that if all that happens is that prices above the
+Hook are violated and we must extt, we will stil have a profitable
+trade. There is always the possibilty that we will get nothing
+more than a double top or a false breakout. Ifso, we will have
+traded for free, having covered our costs and taken a small
+profit as well.
+
+On the chart above the Rh is the high. There were two price bars following the high: one is
+the bar whose failure to move higher created the Hook, and the other is one that simply
+furthered the depth of the correction.
+
+Let’s look at that again by breaking it down in detail in an example.
+
+
+=== 第68页 ===
+The Trader's Trick. 65
+
+Following the high is a bar that fails to have a higher high. This
+failure creates the Ross Hook, and is the first bar of correction. If
+there is sufficient room to cover costs and take a small profit in the
+distance between the high of the correcting bar and the point of the
+
+Hook, we attempt to buy a breakout of the high of the bar that
+
+created the Hook, i.e., the first bar of correction. If the high of the
+first bar of correction is not taken out, ie., violated, we wait for a
+second bar of correction.
+
+Once the second bar of correction is in place, we attempt to buy a
+
+violation of its high, again provided that there is sufficient room to
+
+cover costs and take a profit based on the distance prices have to
+travel between our entry point and the point of the Hook.
+
+If the high of the second bar of correction is not violated, we will attempt to buy a violation of
+the high of a third bar of correction provided there is sufficient room to cover costs and take a
+profit based on the distance prices have to move between our entry point and the point of the
+Hook. Beyond three bars in the correction, we will cease in our attempt to buy a breakout of
+the correction highs.
+
+What if the fourth bar did as pictured on the left? As long as prices are moving back up in the
+direction of the trend that created the Ross Hook, and as long as there is sufficient room for us
+to cover costs and take a profit, we will buy a breakout of the high of any of the three
+previous correction bars. In the example, if we were able to enter before prices violated the
+high of the second bar of correction, we would enter on a violation of the high of the second
+correcting price bar. If not, and there is still room to cover and
+sereeiees seey profit from a violation of the first correcting price bar, we
+] would enter there. Additionally, we could choose to enter on a
+
+takeout of the high of the latest price bar as shown by the
+
+cesses double arrow even if it gaps past one of the correction bar
+| highs.
+
+novees REMINDER: ONCE THERE ARE MORE THAN THREE BARS OF
+
+CORRECTION, WE NO LONGER ATTEMPT TO ENTER A TRADE.
+
+THE MARKET MUST BEGIN TO MOVE TOWARD THE HOOK AT
+
+THE TIME OF OR BEFORE A FOURTH BAR IS MADE.
+
+Although not shown, the exact same concept applies to Ross
+Hooks formed at the end of a down move.
+
+Risk management is based upon the expectation that prices will go up to at least test the point
+of the Hook. At that time, we will take, or already have taken some profit and have covered
+costs.
+
+
+=== 第69页 ===
+66 TRADING BY THE MINUTE.
+
+We are now prepared to exit at breakeven, at the very worst, on the remaining contracts.
+Barring any horrible slippage, the worst we can do is having to exit the trade with some sort
+of profit for our efforts.
+
+We usually limit the Trader's Trick to no more than three bars of correction following the high
+of the bar that is the point of the Hook. However, there is an important exception to this rule.
+The next chart shows the use of double or triple support and resistance areas for implementing
+the Trader's Trick
+
+Please realize that “support” and “resistance” on an intraday chart does not have the usual
+meaning of those terms when applied to the overall supply and demand in the market place.
+What is referred to here is given in the following four examples:
+
+Rh The exception is that, whenever there has been a tight
+congestion area with double or triple support or resistance, it is
+prferable to take a breakout of that area for the Trader's Trick.
+
+<— Triple resistance, buy here
+
+Of course, our rule still remains that there Triple support,
+must be sufficient room between the entry sell here.
+
+point and the point of the Hook to at least
+
+cover costs.
+
+
+
+=== 第70页 ===
+The Trader's Trick 67
+
+Any time a business can consistently make profits, that business is going to prosper. Add to
+that profit the huge amount of money made on the trades that take off and never look back,
+and it’s readily apparent that enormous profits are available from trading.
+
+The management method we use shows why it is so important to be properly capitalized. Size
+in trading helps enormously.
+
+The method also shows why, if we are undercapitalized (most traders are), we must be patient
+and gradually build our account by taking profits quickly when they are there.
+
+If you are not able to tend to your own orders intraday, it may be well worth your while to
+negotiate with a broker who will execute your trading plan for you. There are brokers who
+will do this, and you may be surprised to find that there are some who will perform such
+service at reasonable prices if you trade regularly.
+
+When we are trading using the Trader’s Trick, we don’t want to be filled on a gap opening
+beyond our desired entry price unless there is sufficient room for us to still cover costs and
+take a profit. Can you grasp the logic of that? The reason is that we have no way of knowing
+whether a move toward a breakout is real or not. If it is engineered, the market will move
+forward to the point of taking out the order accumulations and perhaps a few ticks more.
+Then the market will reverse with no follow through in the direction of the breakout. As long
+as we have left enough room between our entry point and the point where orders are
+accumulated to take care of costs and a profit, we will do no worse than breakeven. Usually,
+we will also have a profit to show for any remaining contracts, however small.
+
+If the move proves to be real (not engineered), then the market will give us a huge reward
+relative to our risk and costs. Remember, commission and time are our only real investment
+in the trade if it goes our way.
+
+The important understanding that we need to have about the Trader’s Trick is that by taking
+entry into a market at the correct point, we can neutralize the action by the insiders. We can
+be right and earn something for our efforts should the breakout prove to be false.
+
+Some breakouts will be real. The fundamentals of the market insure that. When those
+breakouts happen, we will be happy, richer traders.
+
+With proper money management, we can earn something for our efforts even if the breakout
+proves to be false.
+
+
+=== 第71页 ===
+68 TRADING BY THE MINUTE.
+
+PRIORITIES
+
+Now it is time to show what our priorities should be. We want to trade the major breakouts
+and intermediate term breakouts first and foremost. This entails making a mental note or
+marking on the chart the points at which these breakouts will occur.
+
+I have presented these in the order of their occurrences. There is no specific priority to the
+major signal trades over the intermediate signal trades as far as their priority goes. The
+breakout from a major entry point is not more important for entry purposes than a breakout
+from an intermediate entry point, nor is the breakout of the extremes of the last three days
+taken as a group necessarily a more important entry signal than the breakout of the individual
+high or low of any of the last three days. Intermediate entry signals do not take a lower
+priority than do major entry signals. The difference between major entry signals and
+intermediate entry signals as it affects other trading will be discussed in a later chapter.
+However, do keep in mind that the thrust to be derived from a major entry signal is generally
+greater than that from an intermediate entry signal
+
+The minor entry signal does defer to the others. The major and the intermediate signals are
+more important than the minor. Any time we can trade a major or intermediate signal rather
+than a minor signal, we should.
+
+
+=== 第72页 ===
+69
+
+Chapter 8
+STOPS
+
+Before proceeding with more trading, let’s take time to discuss stops.
+
+Stops are of two kinds — protective stops, and objective stops.
+
+PROTECTIVE STOPS
+
+It is very difficult to tell someone just where to place stops. This is because stop placement is
+a function of a number of variables. The size of the account must certainly dictate stop
+placement. The ability to withstand pain (comfort level) is a major factor. It’s not practical to
+tell another person to place stops at a certain percentage away from the entry. That doesn’t
+make sense. If the stops are too close, there will be losses on what might have been winning
+trades. If the stops are too far away, there will be larger losses on losing trades than were
+necessary.
+
+Telling someone to place his stops at a certain number of points away from entry is also
+impractical because account sizes vary as do individual levels of comfort.
+
+Traders should be highly suspicious of someone who presumes to tell them where to place
+their stops, unless they are following a person’s trades on an advisory basis. Then, of course,
+they must use that person’s stops or they wouldn’t truly be following what they’ve paid to
+find out.
+
+Since I will not presume to tell anyone where to place their stops, let me tell where I place
+mine.
+
+When I enter a daytrade I use a mental stop. Mental stops can be dangerous. You must
+follow your discipline and stick with your stop price. When I trade I use a mental stop exit
+on one of two conditions:
+
+¢ If I see two reversal bars in a series of price bars that are moving in the desired direction
+away from my entry point.
+
+af 2nd reversal bar. Bar Exit on 2™ al bar when
+t closes lower thanit opens. “*" On < Teversal Dar wit
+l" trading with the violation
+; 4st reversal bar. Bar method.
+
+closes lower than it opens.
+
+H
+
+
+=== 第73页 ===
+70 TRADING BY THE MINUTE.
+
+| ist reversal. Bar closes
+yt higher than it opened.
+
+: nd
+2nd reversal. Bar closes Exit on 2” reversal bar when
+
+¢——higher than it opened. trading with the violation
+method.
+
+Exit on bar that
+makes @ lower low
+| in an up move
+Exit on bar that makes a
+higher high in a down move
+
+|
+
+¢ IfI see a bar that makes a lower low in an up move, or a price bar that makes a higher
+high in a down move.
+
+These exits are all part of the violation method.
+This method of handling stops is valid for both intraday and position trading, so I’d better
+illustrate the point. I call this technique the “violation method.”
+
+REVERSAL BARS
+
+It is assumed that in an up move, prices will move in such a way that each price bar will close
+higher than it opens. Overwhelmingly, on a percentage basis, if in a series of price bars in an
+up move you see two bars which close lower than they open, the indications are that the move
+is at least temporarily over. I take my money and run. I can almost always get back in when
+the move resumes. The two bars in the series do not have to be consecutive. Any two bars in
+the series will do. The combination of open-high/close-low price action in an up move is
+called a reversal bar.
+
+Conversely, in a down move, it is assumed that prices will continuously close lower than they
+open, When I see any two bars that reverse this process (i.e., open low/close high) I have two
+reversal bars. I exit immediately. The reversal bars do not have to be consecutive, they can
+occur anywhere in the series.
+
+
+=== 第74页 ===
+Stops 7I
+
+HIGH AND LOW VIOLATIONS
+
+The presumption is that, in an up move, prices should be making higher highs and higher
+lows. Therefore, if a price bar should happen to make a lower low, thereby violating the
+previous bar’s low, something is not quite right. On a percentage basis, it is a good idea to
+begin exiting as soon as the lower low occurs. The opposite is true in a downtrend. It is
+presumed that prices should be making lower highs and lower lows. If a price bar suddenly
+makes a higher high by violating the previous bar’s high, percentages indicate that the down
+move is going to stop — at least for awhile. I take my money and run.
+
+With the violation method you have a choice as to whether or not you would sell the entire
+position at the time of the violation, a violation being two reversal bars or the making of a
+higher high in a down move or a lower low in an up move. If you choose not to liquidate the
+entire position, you can scale out by exiting part of the position whenever you see the first
+violation, staying in part of the position until you see a second violation, and holding part of
+the position until you see anything that would cause you to take your money and run. It is
+entirely subjective as to what would cause you to do that. Depending on your strategy and
+business plan, you can decide which method is best for you and your trading.
+
+
+=== 第75页 ===
+
+
+=== 第76页 ===
+E=entry
+
+{r=1st reversal
+2r=2nd reversal
+
+x=out
+
+lr — bar opened lower and closed higher rather thi
+
+an opening higher and closing lower
+
+
+
+=== 第77页 ===
+74 TRADING BY THE MINUTE
+
+Begin exit on second reversal bar.
+
+| rsa —[
+
+| =, il
+
+| : i tl k my
+"ay!
+
+
+
+=== 第78页 ===
+Exit on higher high in a down move
+
+

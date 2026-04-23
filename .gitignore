@@ -2,9 +2,9 @@
 .DS_Store
 outputs/
 skills/
-__pycache__/
 *.pyc
 *.pyo
+*/__pycache__/
 .learnings
 .clawhub/
 .pi/

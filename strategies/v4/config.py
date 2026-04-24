@@ -26,7 +26,8 @@ class StrategyConfig:
     
     # === 以损定仓 ===
     risk_pct: float = 1.0                 # 风险比例 %
-    max_position: float = 500.0           # 最大仓位上限
+    max_position: float = 500.0           # 单次仓位上限
+    max_total_position: float = 1000.0    # 总仓位上限（所有持仓合计）
     use_position_size_mode: bool = False  # True=固定仓位, False=以损定仓
     
     # === 形态识别 ===
@@ -34,7 +35,6 @@ class StrategyConfig:
     min_thrust: float = 0.3               # 最小突破幅度%
     p2_p3_lookback: int = 5              # P2/P3回看范围（K线数）
     
-    # === 多仓位 ===
     max_concurrent_positions: int = 3     # 最大同时持仓数
     
     # === 真实交易模拟 ===
@@ -219,51 +219,3 @@ class ConfigManager:
     def list_versions(self) -> list:
         """列出所有可用版本"""
         return list(self.collection.find({}, {"version": 1, "name": 1, "updated_at": 1}))
-
-
-# ==================== 量化系统调用示例 ====================
-
-"""
-# 量化系统配置示例
-
-# 1. 定义配置（由量化系统维护）
-my_config = {
-    'leverage': 10,
-    'initial_balance': 10000,
-    'min_trade_interval': 3,
-    'max_hold_bars': 288,
-    'stop_loss_pct': 5.0,
-    'take_profit_pct': 2.0,
-    'risk_pct': 1.0,
-    'max_position': 500,
-    'use_position_size_mode': False,
-    'lookback_bars': 10,
-    'min_thrust': 0.3,
-    'max_concurrent_positions': 3,
-    'slippage_pct': 0.1,
-    'fill_rate': 0.9,
-    'commission_rate': 0.04,
-    'min_volume': 1000,
-    
-    # 风险管理开关
-    'enable_trailing_stop': True,
-    'trailing_stop_pct': 3.0,
-    'enable_partial_tp': True,
-    'partial_tp_pct': 1.5,
-    'enable_atr_stop': False,
-    'atr_period': 14,
-    'atr_multiplier': 2.0,
-    
-    # 过滤器开关
-    'enable_rsi_filter': True,
-    'rsi_overbought': 70,
-    'rsi_oversold': 30,
-}
-
-# 2. 创建策略配置
-config = StrategyConfig.from_dict(my_config)
-
-# 3. 传入策略
-from v4 import BacktestEngine
-engine = BacktestEngine(config)
-"""

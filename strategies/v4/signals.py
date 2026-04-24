@@ -451,6 +451,11 @@ class SignalGenerator:
         # 提取数据
         closes = [r['close'] for r in records]
         opens = [r['open'] for r in records]
+
+        # DEBUG: 打印当前 K 线数据，帮助排查入场价异常
+        if current_idx >= 0 and current_idx < len(records):
+            rec = records[current_idx]
+            print(f"[DEBUG] current_idx={current_idx} | O={rec['open']} H={rec.get('high','?')} L={rec.get('low','?')} C={rec['close']} | 最后3条: {records[-3:]}")
         
         # 只检查1-2-3形态
         signal = self._try_123_pattern(records, current_idx, closes, opens, None, None, ht_closes)

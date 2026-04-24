@@ -110,10 +110,11 @@ class BacktestEngine:
                             times, closes, highs, lows)
             
             # 入场检查（需要间隔）
-            if self.position_manager.can_open_position():
-                diff = i - self.last_trade_bar
-                if diff >= self.config.min_trade_interval:
-                    self._check_entry(records, closes, highs, lows, i, current_time, current_open)
+            # 注意：量化系统允许同向加仓，所以即使有持仓也可以开新仓
+            # 但需要检查入场间隔
+            diff = i - self.last_trade_bar
+            if diff >= self.config.min_trade_interval:
+                self._check_entry(records, closes, highs, lows, i, current_time, current_open)
         
         # 处理未平仓
         self._close_remaining(closes[-1], times[-1])
@@ -139,7 +140,7 @@ class BacktestEngine:
     def _check_entry(self, records: List[dict], closes: List[float], 
                      highs: List[float], lows: List[float],
                      i: int, current_time: int, current_open: float):
-        """检查入场 - v5 增强版"""
+        """检查入场 - v5 增强版（支持同向加仓）"""
         
         # 使用信号生成器
         ht_closes = self.ht_data['closes'] if self.ht_data else None
@@ -160,18 +161,24 @@ class BacktestEngine:
         if not signal:
             return
         
-        # 检查相反方向持仓
-        if self.position_manager.get_position_count() > 0:
-            existing = self.position_manager.positions[0]
-            if existing.type != signal.side:
-                # 平仓相反方向
-                slippage = self.config.slippage_pct / 100
-                self.position_manager.close_all_opposite_direction(
-                    signal.side, current_open, slippage, current_time, i,
-                    datetime.fromtimestamp(current_time/1000).strftime('%Y-%m-%d %H:%M')
-                )
+        # 检查是否可以开仓（传入方向，允许同向加仓）
+        if not self.position_manager.can_open_position(signal.side):
+            return
         
-        # 开仓
+        # 检查相反方向持仓，先平掉
+        if self.position_manager.get_position_count() > 0:
+            existing_positions = list(self.position_manager.positions)
+            for existing in existing_positions:
+                if existing.type != signal.side:
+                    # 平仓相反方向
+                    slippage = self.config.slippage_pct / 100
+                    self.position_manager.close_all_opposite_direction(
+                        signal.side, current_open, slippage, current_time, i,
+                        datetime.fromtimestamp(current_time/1000).strftime('%Y-%m-%d %H:%M')
+                    )
+                    break  # 平掉一个反向持仓后继续
+        
+        # 开仓（允许同向加仓）
         pos = self.position_manager.open_position(
             signal, current_time, i
         )
@@ -327,11 +334,10 @@ def export_to_excel(trades: List[Trade], missed_signals: List[dict], filename: s
         top=Side(style='thin'), bottom=Side(style='thin')
     )
     
-    # 表头
-    headers = ['序号', '方向', '入场时间', '出场时间', '入场价格', '出场价格',
-               '持仓K线', '持仓金额', '计划止损', '计划止盈', 
-               '入场形态', '突破幅度%', '出场逻辑', '出场原因',
-               '手续费', '盈亏金额', '盈亏%', '余额']
+    # 表头 - 按用户要求的顺序
+    headers = ['序号', '入场形态', '入场时间', '入场价格', '方向', '持仓金额', '盈亏金额',
+               '持仓K线', '出场时间', '出场价格', '突破幅度%', '计划止损', '计划止盈',
+               '出场原因', '手续费', '余额']
     
     for col, h in enumerate(headers, 1):
         cell = ws.cell(row=1, column=col, value=h)
@@ -339,51 +345,56 @@ def export_to_excel(trades: List[Trade], missed_signals: List[dict], filename: s
         cell.fill = header_fill
         cell.border = thin_border
     
-    # 数据
+    # 数据 - 按新字段顺序填充
     sl_pct = config.stop_loss_pct
     tp_pct = config.take_profit_pct
     
     for row, t in enumerate(sorted_trades, 2):
+        # 1. 序号
         ws.cell(row=row, column=1, value=row-1).border = thin_border
-        ws.cell(row=row, column=2, value=t.position).border = thin_border
+        # 2. 入场形态
+        ws.cell(row=row, column=2, value=t.entry_pattern).border = thin_border
+        # 3. 入场时间
         ws.cell(row=row, column=3, value=t.entry_time_str).border = thin_border
-        ws.cell(row=row, column=4, value=t.exit_time_str).border = thin_border
-        ws.cell(row=row, column=5, value=t.entry_price).border = thin_border
-        ws.cell(row=row, column=6, value=t.exit_price).border = thin_border
-        ws.cell(row=row, column=7, value=t.hold_bars).border = thin_border
-        ws.cell(row=row, column=8, value=round(t.position_size, 2)).border = thin_border
-        
-        # 计划止损止盈价格
-        if t.entry_price > 0:
-            sl_price = t.entry_price * (1 - sl_pct / 100)
-            tp_price = t.entry_price * (1 + tp_pct / 100)
-            ws.cell(row=row, column=9, value=round(sl_price, 6)).border = thin_border
-            ws.cell(row=row, column=10, value=round(tp_price, 6)).border = thin_border
-        
-        # v5: 形态破坏止损价
-        
-        ws.cell(row=row, column=12, value=t.entry_pattern).border = thin_border
-        ws.cell(row=row, column=13, value=round(t.thrust, 2)).border = thin_border
-        ws.cell(row=row, column=14, value=t.exit_logic).border = thin_border
-        ws.cell(row=row, column=15, value=t.exit_reason).border = thin_border
-        ws.cell(row=row, column=16, value=round(t.commission, 2)).border = thin_border
-        
-        # 盈亏颜色
-        profit_cell = ws.cell(row=row, column=17, value=round(t.profit_usd, 2))
+        # 4. 入场价格
+        ws.cell(row=row, column=4, value=t.entry_price).border = thin_border
+        # 5. 方向
+        ws.cell(row=row, column=5, value=t.position).border = thin_border
+        # 6. 持仓金额
+        ws.cell(row=row, column=6, value=round(t.position_size, 2)).border = thin_border
+        # 7. 盈亏金额（带颜色）
+        profit_cell = ws.cell(row=row, column=7, value=round(t.profit_usd, 2))
         profit_cell.border = thin_border
         if t.profit_usd > 0:
             profit_cell.fill = PatternFill(start_color="C6EFCE", end_color="C6EFCE", fill_type="solid")
         elif t.profit_usd < 0:
             profit_cell.fill = PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid")
-
-        pnl_cell = ws.cell(row=row, column=18, value=round(t.pnl_pct, 2))
-        pnl_cell.border = thin_border
-        if t.pnl_pct > 0:
-            pnl_cell.fill = PatternFill(start_color="C6EFCE", end_color="C6EFCE", fill_type="solid")
-        elif t.pnl_pct < 0:
-            pnl_cell.fill = PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid")
-
-        ws.cell(row=row, column=19, value=round(t.balance_after, 2)).border = thin_border
+        # 8. 持仓K线
+        ws.cell(row=row, column=8, value=t.hold_bars).border = thin_border
+        # 9. 出场时间
+        ws.cell(row=row, column=9, value=t.exit_time_str).border = thin_border
+        # 10. 出场价格
+        ws.cell(row=row, column=10, value=t.exit_price).border = thin_border
+        # 11. 突破幅度%
+        ws.cell(row=row, column=11, value=round(t.thrust, 2)).border = thin_border
+        # 12. 计划止损（价格）
+        if t.entry_price > 0:
+            sl_price = t.entry_price * (1 - sl_pct / 100)
+            ws.cell(row=row, column=12, value=round(sl_price, 6)).border = thin_border
+        else:
+            ws.cell(row=row, column=12, value='').border = thin_border
+        # 13. 计划止盈（价格）
+        if t.entry_price > 0:
+            tp_price = t.entry_price * (1 + tp_pct / 100)
+            ws.cell(row=row, column=13, value=round(tp_price, 6)).border = thin_border
+        else:
+            ws.cell(row=row, column=13, value='').border = thin_border
+        # 14. 出场原因
+        ws.cell(row=row, column=14, value=t.exit_reason).border = thin_border
+        # 15. 手续费
+        ws.cell(row=row, column=15, value=round(t.commission, 2)).border = thin_border
+        # 16. 余额
+        ws.cell(row=row, column=16, value=round(t.balance_after, 2)).border = thin_border
     
     # 列宽
     for col in 'ABCDEFGHIJKLMNOPQRST':

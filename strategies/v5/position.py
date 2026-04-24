@@ -135,8 +135,12 @@ class PositionManager:
         """获取当前总仓位金额"""
         return sum(p.position_size for p in self.positions)
     
-    def can_open_position(self) -> bool:
-        """检查是否可以开仓"""
+    def can_open_position(self, side: str = None) -> bool:
+        """检查是否可以开仓
+        
+        Args:
+            side: 新仓位方向 ('long' or 'short')，用于判断是否允许同向加仓
+        """
         # v5: 检查总仓位上限
         max_total = getattr(self.config, 'max_total_position', 1000.0)
         if self.get_total_position_size() >= max_total:
@@ -146,6 +150,15 @@ class PositionManager:
         max_daily_loss = getattr(self.config, 'max_daily_loss', 50.0)
         if self.daily_pnl <= -max_daily_loss:
             return False
+        
+        # v5: 允许同向加仓（如果有持仓且方向相同，可以加仓）
+        # 如果有持仓但方向不同，需要先平反向仓位
+        if side and self.get_position_count() > 0:
+            for pos in self.positions:
+                if pos.type != side:
+                    # 有反向持仓，需要先平仓
+                    # 但这不影响开仓判断，因为会在入场时自动平反向仓位
+                    pass
         
         return True
     
